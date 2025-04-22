@@ -1,4 +1,4 @@
-module hope_timer60 (
+module timer60 (
     input wire Clk,
     input wire set_time,
     input wire UpOrDown, 
@@ -22,7 +22,7 @@ module hope_timer60 (
     assign carry60 = {carry_upper, carry_lower};
 
     // Instantiate lower timer (Units)
-    hope_timer10 #(.N(4'b1001)) Unit (
+    timer10 #(.N(4'b1001)) Unit (
         .Clk(Clk),
         .set_time(set_time),
         .start(start),
@@ -36,7 +36,7 @@ module hope_timer60 (
     );
 
     // Instantiate upper timer (Dozens) with carry_lower as clock
-    hope_timer10 #(.N(4'b0101)) Dozen ( // Dozen counter wraps at 5 (0–59 counting)
+    timer10 #(.N(4'b0101)) Dozen ( // Dozen counter wraps at 5 (0–59 counting)
         .Clk(carry_lower), // Use carry_lower as clock
         .set_time(set_time),
         .start(start),
