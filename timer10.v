@@ -1,4 +1,4 @@
-module hope_timer10
+module timer10
 #(parameter N = 4'b1001) // Max count value
 (
     input wire set_time,
