@@ -25,3 +25,53 @@ phút) bằng các công tắc (switch)
 ❑ SV có thể tùy biến thiết kế theo ý thích để có kết quả thiết kế tốt nhất
 
 Youtube: https://youtu.be/5qu6w7BbWvU?si=KWX-QWE1QhkpjOig
+
+
+
+# Digital Timer Project
+
+![Timer Circuit](https://via.placeholder.com/400x200?text=Timer+Circuit)  
+*A digital countdown timer implemented in Verilog HDL*
+
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Hardware Requirements](#hardware-requirements)
+- [Module Architecture](#module-architecture)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Simulation Results](#simulation-results)
+- [Team](#team)
+- [License](#license)
+
+## Project Overview
+This project implements a fully functional digital countdown timer using Verilog HDL. The system was developed for the Digital Circuits and Systems course at the University of Science and Technology, The University of Danang.
+
+Key specifications:
+- Countdown range: 00:00 to 59:59 (MM:SS)
+- 1Hz timing resolution
+- Four 7-segment LED displays
+- Visual and audible alarm indicators
+
+## Features
+✔ **Precise Timing**  
+- 1Hz clock derived from 50MHz system clock
+- Accurate minute/second counting
+
+✔ **User Controls**  
+- Time setting with increment/decrement buttons
+- Start/Pause/Resume functionality
+- System reset
+
+✔ **Visual Feedback**  
+- 4-digit 7-segment display (MM:SS)
+- Blinking LED alarm at countdown completion
+- Protection against invalid inputs
+
+## Hardware Requirements
+- FPGA Development Board (Xilinx/Altera)
+- 4x Common Anode 7-segment displays
+- 5x Tactile switches (Set+, Set-, Start, Pause, Reset)
+- 1x Status LED
+- 50MHz clock source
+
