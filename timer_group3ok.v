@@ -86,7 +86,7 @@ end
 
 
     // Second timer module
-    hope_timer60 seccount (
+    timer60 seccount (
         .Clk(Clk),
         .set_time(Set_clk),
         .UpOrDown(UpOrDown),
@@ -102,7 +102,7 @@ end
     );
 
     // Minute timer module
-    hope_timer60 mincount (
+    timer60 mincount (
         .Clk(carrysec[1]),
         .set_time(Set_clk),
         .UpOrDown(UpOrDown),
